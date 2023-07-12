@@ -26,6 +26,8 @@ class Quiz1Test<T> {
     @Test
     void quiz3() throws IOException {
         assertThat(quiz.quiz3()).isEqualTo(answer.quiz3());
+        System.out.println("문제 정답 출력 결과 : " + answer.quiz3());
+        System.out.println("나의 정답 출력 결과 : " + quiz.quiz3());
     }
 
     private void print(T answer, T quiz) {
