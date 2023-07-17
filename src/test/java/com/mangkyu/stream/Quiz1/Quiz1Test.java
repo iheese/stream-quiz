@@ -29,7 +29,7 @@ class Quiz1Test {
     }
 
     public void print(int quizNumber,Object answer, Object quiz) {
-        System.out.println( quizNumber + "번 문제 정답 출력 결과 : " + answer);
-        System.out.println( quizNumber + "번 나의 정답 출력 결과 : " + quiz);
+        System.out.println(quizNumber + "번 문제 정답 출력 결과 : " + answer);
+        System.out.println(quizNumber + "번 나의 정답 출력 결과 : " + quiz);
     }
 }
