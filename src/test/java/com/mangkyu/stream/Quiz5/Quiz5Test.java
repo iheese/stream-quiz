@@ -17,16 +17,19 @@ class Quiz5Test {
     @Test
     void quiz1() {
         assertThat(quiz.quiz1()).isEqualTo(answer.quiz1());
+        print(1, quiz.quiz1(), answer.quiz1());
     }
 
     @Test
     void quiz2() {
         assertThat(quiz.quiz2()).isEqualTo(answer.quiz2());
+        print(2, quiz.quiz2(), answer.quiz2());
     }
 
     @Test
     void quiz3() {
         assertThat(isCorrect(quiz.quiz3())).isTrue();
+        print(3, quiz.quiz3(), answer.quiz3());
     }
 
     private boolean isCorrect(List<Integer> quiz) {
@@ -38,6 +41,7 @@ class Quiz5Test {
     @Test
     void quiz4() {
         assertThat(isEquals(quiz.quiz4(), answer.quiz4())).isTrue();
+        print(4, quiz.quiz4(), answer.quiz4());
     }
 
     private boolean isEquals(List<Integer[]> quiz, List<Integer[]> answer) {
@@ -51,6 +55,11 @@ class Quiz5Test {
             }
         }
         return true;
+    }
+
+    public void print(int quizNumber,Object answer, Object quiz) {
+        System.out.println(quizNumber + "번 문제 정답 출력 결과 : " + answer);
+        System.out.println(quizNumber + "번 나의 정답 출력 결과 : " + quiz);
     }
 
 }
